@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+            - nombre: Descargar un artefacto de compilación
+  Usos: actions/download-artifact@v3.1.0
+  con:
+    # Nombre del artefacto
+    nombre: # opcional
+    # Ruta de destino
+    ruta: # opcional
+          concurrency:
+            

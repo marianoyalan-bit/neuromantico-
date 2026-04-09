@@ -1,13 +1,24 @@
-.github/workflows/main.yml
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/btnStart"
-        android:text="Iniciar Neuromántico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+            - nombre: Configuración del SDK de .NET Core
+  Usos: actions/setup-dotnet@v5.2.0
+  con:
+    # Versión(es) opcional(es) del SDK a utilizar. Si no se especifica, se instalará la versión de global.json cuando esté disponible. Ejemplos: 2.2.104, 3.1, 3.1.x, 3.x, 6.0.2xx
+    dotnet-version: # opcional
+    # Calidad opcional de la compilación. Los valores posibles son: daily, signed, validated, preview, ga.
+    dotnet-quality: # opcional
+    # Ubicación opcional de global.json, si su global.json no se encuentra en la raíz del repositorio.
+    archivo-json-global: # opcional
+    # Origen de paquete opcional para configurar la autenticación. Consultará cualquier archivo NuGet.config existente en la raíz del repositorio y proporcionará un archivo NuGet.config temporal utilizando la variable de entorno NUGET_AUTH_TOKEN como ClearTextPassword.
+    URL de origen: # opcional
+    # OWNER opcional para usar paquetes de organizaciones/usuarios del Registro de Paquetes de GitHub distintos del propietario del repositorio actual. Solo se usa si también se proporciona una URL de GPR en source-url.
+    propietario: # opcional
+    # Ubicación opcional de NuGet.config, si su NuGet.config no se encuentra en la raíz del repositorio.
+    archivo-de-configuración: # opcional
+    # Entrada opcional para habilitar el almacenamiento en caché de la carpeta global-packages de NuGet
+    caché: # opcional
+    # Se utiliza para especificar la ruta a un archivo de dependencia: packages.lock.json. Admite comodines o una lista de nombres de archivo para almacenar en caché varias dependencias.
+    ruta de dependencia de caché: # opcional
+    # Cargas de trabajo SDK opcionales para instalar y obtener soporte adicional para la plataforma. Ejemplos: wasm-tools, maui, aspire.
+    cargas de trabajo: # opcional
+    # Arquitectura opcional para la instalación de .NET. Valores admitidos: x64, x86, arm64, amd64, arm, s390x, ppc64le, riscv64. Si no se especifica, el instalador detecta automáticamente la arquitectura del sistema actual.
+    arquitectura: # opcional
+          
